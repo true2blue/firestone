@@ -214,6 +214,33 @@
           </b-row>
           <b-row no-gutters>
             <b-col lg="4">
+              <label for="below_cb">低于成本:</label>
+            </b-col>
+            <b-col lg="2">
+              <label for="cb">成本:</label>
+            </b-col>
+            <b-col lg="2">
+              <b-form-input
+                size="sm"
+                maxlength="5"
+                id="cb"
+                v-model="strategy.parameters.cb"
+              ></b-form-input>
+            </b-col>
+            <b-col lg="2">
+              <label for="buy_below_cb_percent">跌幅:</label>
+            </b-col>
+            <b-col lg="2">
+              <b-form-input
+                size="sm"
+                maxlength="5"
+                id="buy_below_cb_percent"
+                v-model="strategy.parameters.buy_below_cb_percent"
+              ></b-form-input>
+            </b-col>
+          </b-row>
+          <b-row no-gutters>
+            <b-col lg="4">
               <label for="sell">止盈:</label>
             </b-col>
             <b-col lg="2">
