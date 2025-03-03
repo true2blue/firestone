@@ -79,6 +79,30 @@
             </b-col>
           </b-row>
           <b-row no-gutters>
+            <b-col
+              lg="4"
+              class="label"
+            >
+              <label for="delta">下单浮动(现价):</label>
+            </b-col>
+            <b-col
+              lg="4"
+              class="input"
+            >
+              <b-form-input
+                id="delta"
+                size="sm"
+                type="number"
+                step="0.001"
+                min="-10.0"
+                max="10.0"
+                v-model="strategy.parameters.delta"
+              ></b-form-input>
+            </b-col>
+            <b-col lg="4">
+            </b-col>
+          </b-row>
+          <b-row no-gutters>
             <b-col lg="4">
               <label for="max_stock_percent">妖股涨幅:</label>
             </b-col>
