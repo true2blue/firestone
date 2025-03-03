@@ -49,7 +49,7 @@
             lg="6"
             class="label"
           >
-            <label for="gddm">gddm:</label>
+            <label for="gddm">gddm(深):</label>
           </b-col>
           <b-col
             lg="2"
@@ -59,6 +59,24 @@
               id="gddm"
               required
               v-model="config.gddm"
+            ></b-form-input>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col
+            lg="6"
+            class="label"
+          >
+            <label for="hgddm">gddm(沪):</label>
+          </b-col>
+          <b-col
+            lg="2"
+            class="input"
+          >
+            <b-form-input
+              id="hgddm"
+              required
+              v-model="config.hgddm"
             ></b-form-input>
           </b-col>
         </b-row>
