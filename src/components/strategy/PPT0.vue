@@ -90,7 +90,7 @@
           </b-row>
           <b-row no-gutters>
             <b-col lg="4">
-              <label for="start_buy_line">下跌:</label>
+              <label for="start_buy_line">下跌(从开盘价):</label>
             </b-col>
             <b-col lg="2">
               <label for="start_buy_line">跌幅:</label>
@@ -285,6 +285,26 @@
                 min="-10.0"
                 max="10.0"
                 v-model="strategy.parameters.delta"
+              ></b-form-input>
+            </b-col>
+            <b-col lg="4">
+            </b-col>
+          </b-row>
+          <b-row no-gutters>
+            <b-col
+              lg="4"
+              class="label"
+            >
+              <label for="drop_percent">跌幅(当前):</label>
+            </b-col>
+            <b-col lg="4">
+              <b-form-input
+                size="sm"
+                type="number"
+                step="0.1"
+                min="-10.0"
+                max="10.0"
+                v-model="strategy.parameters.drop_percent"
               ></b-form-input>
             </b-col>
             <b-col lg="4">
