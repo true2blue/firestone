@@ -295,7 +295,7 @@
               lg="4"
               class="label"
             >
-              <label for="drop_percent">跌幅(当前):</label>
+              <label for="drop_percent">跌幅大于:</label>
             </b-col>
             <b-col lg="4">
               <b-form-input
