@@ -311,6 +311,26 @@
             </b-col>
           </b-row>
           <b-row no-gutters>
+            <b-col
+              lg="4"
+              class="label"
+            >
+              <label for="drop_percent">自动:</label>
+            </b-col>
+            <b-col lg="4">
+              <b-form-input
+                size="sm"
+                type="number"
+                step="1"
+                min="0"
+                max="1"
+                v-model="strategy.parameters.auto"
+              ></b-form-input>
+            </b-col>
+            <b-col lg="4">
+            </b-col>
+          </b-row>
+          <b-row no-gutters>
             <b-col lg="12">
               <b-button
                 v-if="this.getItemFromLocalStorage('basic_params').from == 'history'"
