@@ -128,6 +128,21 @@
           </b-row>
           <b-row no-gutters>
             <b-col lg="4">
+              <label for="min_avg_stock_percent">板块平均涨幅(最低):</label>
+            </b-col>
+            <b-col lg="4">
+              <b-form-input
+                size="sm"
+                maxlength="11"
+                id="min_avg_stock_percent"
+                v-model="strategy.parameters.min_avg_stock_percent"
+              ></b-form-input>
+            </b-col>
+            <b-col lg="4">
+            </b-col>
+          </b-row>
+          <b-row no-gutters>
+            <b-col lg="4">
               <label for="open_percent">开盘涨幅:</label>
             </b-col>
             <b-col lg="1">
