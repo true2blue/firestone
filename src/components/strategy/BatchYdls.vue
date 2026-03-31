@@ -103,17 +103,6 @@
             </b-col>
           </b-row>
           <b-row no-gutters>
-            <b-col lg="4">
-              <label for="max_stock_percent">妖股涨幅:</label>
-            </b-col>
-            <b-col lg="4">
-              <b-form-input
-                size="sm"
-                maxlength="11"
-                id="max_stock_percent"
-                v-model="strategy.parameters.max_stock_percent"
-              ></b-form-input>
-            </b-col>
             <b-col lg="2">
               <label for="auto_cancel">自动撤单:</label>
             </b-col>
