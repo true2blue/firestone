@@ -288,11 +288,11 @@
                 step="1"
                 min="1"
                 max="14400"
-                v-model="strategy.parameters.speed.time_volume"
+                v-model="strategy.parameters.speed.time_amount"
               ></b-form-input>
             </b-col>
             <b-col lg="2">
-              <label for="code">成交量:</label>
+              <label for="code">成交额:</label>
             </b-col>
             <b-col lg="2">
               <b-form-input
@@ -301,7 +301,7 @@
                 step="1"
                 min="0"
                 max="99999999"
-                v-model="strategy.parameters.speed.volume"
+                v-model="strategy.parameters.speed.amount"
               ></b-form-input>
             </b-col>
           </b-row>
@@ -310,7 +310,7 @@
               <label for="other">其他参数:</label>
             </b-col>
             <b-col lg="2">
-              <label for="other">总成交量:</label>
+              <label for="other">总成交额:</label>
             </b-col>
             <b-col lg="2">
               <b-form-input
@@ -319,7 +319,7 @@
                 step="1"
                 min="0"
                 max="99999999999"
-                v-model="strategy.parameters.voulme_now"
+                v-model="strategy.parameters.amount_now"
               ></b-form-input>
             </b-col>
           </b-row>
